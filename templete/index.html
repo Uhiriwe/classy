@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html>                                                                                                                                                                                                          
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://cdn.tailwindcss.com"></script>
+	<title>classy</title>
+	<style type="text/css">
+
+		a:link {
+			
+			padding: 3px;
+		}
+		
+		.gallery {
+  			margin: 5px;
+  			display: flex;
+  			width: 100%;
+
+		}
+		.photos {
+			margin: 20px;
+			border-width: 1px solid;
+			border-radius: 10px;
+			width: 100%;
+			border-radius: 10px;
+			height: 70%;
+			
+		}
+		img:hover {
+            opacity: 0.5;
+		}
+		h3 {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-weight: 900;
+			padding: 10px 0;
+		}
+
+
+	</style>
+</head>`
+<body>
+	<div class="bg bg-cyan-600 max-w-70 min-w-5"  style="height: 80px;">
+		<button><h1 class="pt-4 text-red-900 p-3" style="font-family: fantasy;">c . l . a . s . s . y</h1></button>
+		<div class="text-white italic" style="padding-left: 900px;">
+			<a href="#">HOME |</a>
+			<a href="{% url 'new_fashion' %}">NEW DESIGN | </a>
+			<a href="#">TALK TO US |</a>
+
+			
+		</div>
+	</div><br>
+
+	
+	<center><h1><b>CLASSY FASHION HUB</b></h1></center>
+<hr>
+<br>
+	<div class="gallery">
+		{% for x in getAllPosts %}
+		<div class="photos">
+			<img src="{{ x.image.url }}" alt="Image" height="400" style="height: 360px;">
+		 	<h3><b>{{x.title}}  </b></h3>. 
+		 	<p>{{x.discription}}</p>
+		</div> 
+		{% endfor %}
+	</div>
+
+
+
+	<footer class="bg-slate-950 w-100 " style="height: 200px;">
+		<ul class="text-white " style="padding: 50px; color: white;"><br>
+			MORE ABOUT US | 
+			NEW KITCHEN DESIGN |
+			NEW SALOON DESIGN | <button>....</button>
+			
+		</ul> 
+		<hr>
+		<center> <p class="text-white">&copy; 2024 My Website. All rights reserved.</p></center>
+
+	</footer>
+
+
+
+  
+ 
+	
+
+</body>
+</html>

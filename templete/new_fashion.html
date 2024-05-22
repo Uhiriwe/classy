@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<title>new fashion</title>
+	<style type="text/css">
+		
+		div.gallery {
+  			margin: 5px;
+  			display: flex;
+  			width: 100%;
+
+		}
+		.photos {
+			margin: 20px;
+			border-width: 1px solid;
+			border-radius: 10px;
+			width: 100%;
+			border-radius: 10px;
+			height: 70%;
+
+			
+		}
+		img:hover {
+            opacity: 0.5;
+		}
+		h3 {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-weight: 900;
+			padding: 10px 0;
+		}
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="bg bg-cyan-600 max-w-70 min-w-5"  style="height: 80px;">
+		<button><h1 class="pt-4 text-red-900 p-3" style="font-family: fantasy;">c . l . a . s . s . y</h1></button>
+		<div class="text-white italic" style="padding-left: 900px;">
+			<a href="{% url 'index' %}">HOME |</a>
+			<a href="{% url 'new_fashion' %}">NEW DESIGN |</a>
+			<a href="#">TALK TO US |</a>
+
+			
+		</div>
+	</div><br>
+	<center><h1><b>NEW FASHION</b></h1></center>
+	<hr>
+	<div class="gallery">
+	 <div class="photos">
+	 	<img src="{% static 'image/pc2.jpeg' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Discover the chic and timeless allure of our fashion collection, where elegance meets trendiness.</p>
+	 	
+	 </div>
+
+	 <div class="photos">
+	 	<img src="{% static 'image/trad.jpeg' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p> Embrace the sophisticated glamour of our stylish and contemporary pieces, designed for the modern individual with an eye for unique, sleek ensembles.</p>
+	 </div>
+
+<div class="photos">
+	 	<img src="{% static 'image/pc.jpeg' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Embrace the sophisticated glamour of our stylish and contemporary pieces, designed for the modern individual with an eye for unique, sleek ensembles.</p>
+	 </div>
+
+<div class="photos">
+	 	<img src="{% static 'image/traditional.jpg' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Embrace the sophisticated glamour of our stylish and contemporary pieces, designed for the modern individual with an eye for unique.</p>
+	 </div>
+	 </div>
+	 <br>
+	<center> <h1><b>SALOON</b></h1></center>
+
+	 <hr>
+
+
+
+	 <div class="gallery">
+	 <div class="photos">
+	 	<img src="{% static 'image/s1.WEBP' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.</p>
+	 </div>
+
+	 <div class="photos">
+	 	<img src="{% static 'image/s5.jpeg' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.
+	 </div>
+
+<div class="photos">
+	 	<img src="{% static 'image/s6.jpg' %}" alt="Image" height="400" style=" height: 360px;"><br>Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.
+	 </div>
+
+<div class="photos">
+	 	<img src="{% static 'image/s2.WEBP' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.
+	 </div>
+	 </div><br>
+	<center> <h1><b>SHEET</b></h1></center>
+	 <hr>
+
+	 	 <div class="gallery">
+	 <div class="photos">
+	 	<img src="{% static 'image/2.JPG' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.</p>
+	 </div>
+
+	 <div class="photos">
+	 	<img src="{% static 'image/PC7.jpeg' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.</p>
+	 </div>
+
+<div class="photos">
+	 	<img src="{% static 'image/PC5.jpeg' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.</p>
+	 </div>
+
+<div class="photos">
+	 	<img src="{% static 'image/PC6.WEBP' %}" alt="Image" height="400" style=" height: 360px;"><br>
+	 	<p>Step into culinary elegance with our kitchen fashion collection, where functionality meets exquisite design.</p>
+	 </div>
+	 </div>
+
+
+
+	<footer class="bg-slate-950 w-100 " style="height: 200px;">
+		<ul class="text-white " style="padding: 50px; color: white;"><br>
+			MORE ABOUT US | 
+			NEW KITCHEN DESIGN |
+			NEW SALOON DESIGN | <button><a href=""></a> ....</button>
+			
+		</ul> 
+		<hr>
+		<center> <p class="text-white">&copy; 2024 My Website. All rights reserved.</p></center>
+
+	</footer>
+
+
+
+</body>
+</html>
